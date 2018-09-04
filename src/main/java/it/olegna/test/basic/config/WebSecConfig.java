@@ -39,7 +39,6 @@ public class WebSecConfig extends WebSecurityConfigurerAdapter {
 	          .and()
 	          .httpBasic()
 	          .authenticationEntryPoint(authenticationEntryPoint);
-	        //http.addFilterAfter(new CustomFilter(), BasicAuthenticationFilter.class);
 	    }
 	    @Bean
 	    public PasswordEncoder passwordEncoder() {
